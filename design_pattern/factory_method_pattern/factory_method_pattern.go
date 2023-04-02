@@ -2,6 +2,7 @@ package factory_method_pattern
 
 import "fmt"
 
+// IClothes 工厂接口
 type IClothes interface {
 	setName(name string)
 	setSize(size int)
@@ -9,7 +10,7 @@ type IClothes interface {
 	GetSize() int
 }
 
-// clothes 实现了 IClothes 接口
+// clothes 实现了 IClothes 接口, 为具体工厂类
 type clothes struct {
 	name string
 	size int
@@ -45,6 +46,7 @@ func newPEAK() IClothes {
 	}
 }
 
+// ANTA 嵌入了 clothes, 间接实现了 IClothes 接口
 type ANTA struct {
 	clothes
 }
@@ -58,7 +60,7 @@ func newANTA() IClothes {
 	}
 }
 
-// MakeClothes 工厂方法, 根据实参类型生产不同品牌的服装
+// MakeClothes 工厂方法, 根据实参类型生产不同品牌的服装, 也可与具体工厂类绑定
 func MakeClothes(clothesType string) (IClothes, error) {
 	switch clothesType {
 	case "PEAK":

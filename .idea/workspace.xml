@@ -4,13 +4,9 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="baeeacef-1584-4523-8596-f7dffb52d647" name="Changes" comment="feat: factory method pattern">
-      <change afterPath="$PROJECT_DIR$/design_pattern/factory_method_pattern/factory_method_pattern.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/design_pattern/factory_method_pattern/factory_method_pattern_test.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/design_pattern/singleton_pattern/singleton_pattern_test.go" afterDir="false" />
+    <list default="true" id="baeeacef-1584-4523-8596-f7dffb52d647" name="Changes" comment="update workspace.xml">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/design_pattern/singleton_pattern.go" beforeDir="false" afterPath="$PROJECT_DIR$/design_pattern/singleton_pattern/singleton_pattern.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/design_pattern/factory_method_pattern/factory_method_pattern.go" beforeDir="false" afterPath="$PROJECT_DIR$/design_pattern/factory_method_pattern/factory_method_pattern.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -124,7 +120,8 @@
     <MESSAGE value="file: add .idea/" />
     <MESSAGE value="fix: import in main.go" />
     <MESSAGE value="feat: factory method pattern" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: factory method pattern" />
+    <MESSAGE value="update workspace.xml" />
+    <option name="LAST_COMMIT_MESSAGE" value="update workspace.xml" />
   </component>
   <component name="VgoProject">
     <integration-enabled>false</integration-enabled>
