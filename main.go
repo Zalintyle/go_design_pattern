@@ -1,7 +1,7 @@
 package main
 
 import (
-	"design_pattern_learning/design_pattern"
+	"go_design_pattern/design_pattern"
 	"sync"
 )
 
