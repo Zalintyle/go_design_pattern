@@ -1,4 +1,4 @@
-package design_pattern
+package singleton_pattern
 
 import (
 	"fmt"
@@ -43,12 +43,12 @@ func GetInstance2() *Singleton {
 // ==================== 饿汉式单例模式 ====================
 // 优点：并发安全
 // 缺点：在导入包的同时会创建对象，并且创建的对象会持续存储在内存中
-func init() {
-	if instance == nil {
-		instance = new(Singleton)
-		fmt.Println("创建单个实例")
-	}
-}
+//func init() {
+//	if instance == nil {
+//		instance = new(Singleton)
+//		fmt.Println("创建单个实例")
+//	}
+//}
 
 // GetInstance3 饿汉式-线程安全
 func GetInstance3() *Singleton {
