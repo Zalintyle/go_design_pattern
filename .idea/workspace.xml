@@ -4,12 +4,8 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="baeeacef-1584-4523-8596-f7dffb52d647" name="Changes" comment="update workspace.xml">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/design_pattern/singleton_pattern/my_once.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/design_pattern/singleton_pattern/singleton_pattern.go" beforeDir="false" afterPath="$PROJECT_DIR$/design_pattern/singleton_pattern/singleton_pattern.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/design_pattern/singleton_pattern/singleton_pattern_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/design_pattern/singleton_pattern/singleton_pattern_test.go" afterDir="false" />
+    <list default="true" id="baeeacef-1584-4523-8596-f7dffb52d647" name="Changes" comment="fix: complement singleton pattern, implement MyOnce">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -139,7 +135,8 @@
     <MESSAGE value="fix: import in main.go" />
     <MESSAGE value="feat: factory method pattern" />
     <MESSAGE value="update workspace.xml" />
-    <option name="LAST_COMMIT_MESSAGE" value="update workspace.xml" />
+    <MESSAGE value="fix: complement singleton pattern, implement MyOnce" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix: complement singleton pattern, implement MyOnce" />
   </component>
   <component name="VgoProject">
     <environment>
