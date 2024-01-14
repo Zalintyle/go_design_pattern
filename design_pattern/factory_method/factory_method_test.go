@@ -1,4 +1,4 @@
-package factory_method_pattern
+package factory_method
 
 import (
 	"fmt"
@@ -14,6 +14,5 @@ func TestMakeClothes(t *testing.T) {
 }
 
 func printDetails(c IClothes) {
-	fmt.Printf("Clothes name: %s, Clothes size: %d", c.GetName(), c.GetSize())
-	fmt.Printf("\n")
+	fmt.Printf("Clothes name: %s, Clothes size: %d\n", c.GetName(), c.GetSize())
 }
