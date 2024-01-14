@@ -10,7 +10,7 @@ func TestGetInstance4(t *testing.T) {
 	wg := sync.WaitGroup{}
 	wg.Add(20)
 	for i := 0; i < 20; i++ {
-		go GetInstance4(&wg)
+		go GetInstance4ForTest(&wg)
 	}
 	wg.Wait()
 }
