@@ -4,6 +4,10 @@ type SuvBuilder struct {
 	Car
 }
 
+func NewSuvBuilder() *SuvBuilder {
+	return &SuvBuilder{}
+}
+
 func (s *SuvBuilder) SetSeatsType() {
 	s.SeatsType = "suv seats"
 }

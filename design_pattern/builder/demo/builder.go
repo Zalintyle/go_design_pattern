@@ -10,9 +10,9 @@ type InterfaceBuilder interface {
 func GetBuilder(builderType string) InterfaceBuilder {
 	switch builderType {
 	case "mpv":
-		return &MpvBuilder{}
+		return NewMpvBuilder()
 	case "suv":
-		return &SuvBuilder{}
+		return NewSuvBuilder()
 	default:
 		return nil
 	}
