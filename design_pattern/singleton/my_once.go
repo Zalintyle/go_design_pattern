@@ -6,11 +6,31 @@ import (
 )
 
 type MyOnce struct {
+	// done indicates whether the action has been performed.
+	// It is first in the struct because it is used in the hot path.
+	// The hot path is inlined at every call site.
+	// Placing done first allows more compact instructions on some architectures (amd64/386),
+	// and fewer instructions (to calculate offset) on other architectures.
 	done uint32
-	m    sync.Mutex
+	// m Mutex used to lock and unlock the done variable.
+	m sync.Mutex
 }
 
 func (o *MyOnce) Do(f func()) {
+	// Note: Here is an incorrect implementation of Do:
+	//
+	//	if atomic.CompareAndSwapUint32(&o.done, 0, 1) {
+	//		f()
+	//	}
+	//
+	// Do guarantees that when it returns, f has finished.
+	// This implementation would not implement that guarantee:
+	// given two simultaneous calls, the winner of the cas would
+	// call f, and the second would return immediately, without
+	// waiting for the first's call to f to complete.
+	// This is why the slow path falls back to a mutex, and why
+	// the atomic.StoreUint32 must be delayed until after f returns.
+
 	if atomic.LoadUint32(&o.done) == 0 {
 		// do f()
 		o.doSlow(f)
